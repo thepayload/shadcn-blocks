@@ -36,6 +36,10 @@ export const docsConfig: DocsConfig = {
       title: "Colors",
       href: "/colors",
     },
+    {
+      title: "Pro",
+      href: "/pro/sidebars",
+    },
   ],
   sidebarNav: [
     {
@@ -339,6 +343,42 @@ export const docsConfig: DocsConfig = {
         },
       ],
     },
+    {
+      title: "Pro",
+      label: 'New',
+      items: [
+        {
+          title: "Auths",
+          href: "/docs/pro/auths",
+          items: [],
+        },
+        {
+          title: "Feedbacks",
+          href: "/docs/pro/feedbacks",
+          items: [],
+        },
+        {
+          title: "Navigation Headers",
+          href: "/docs/pro/navigation-headers",
+          items: [],
+        },
+        {
+          title: "Sidebars",
+          href: "/docs/pro/sidebars",
+          items: [],
+        },
+        {
+          title: "Steppers",
+          href: "/docs/pro/steppers",
+          items: [],
+        },
+        {
+          title: "Widgets",
+          href: "/docs/pro/widgets",
+          items: [],
+        },
+      ]
+    }
   ],
   chartsNav: [
     {
