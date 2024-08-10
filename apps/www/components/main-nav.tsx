@@ -100,15 +100,14 @@ export function MainNav() {
           href="/docs/pro/sidebars"
           className={cn(
             "transition-colors hover:text-foreground/80",
-            pathname?.startsWith("/docs/pro") ||
-            pathname?.startsWith("/pro")
+            pathname?.startsWith("/docs/pro") || pathname?.startsWith("/pro")
               ? "text-foreground"
               : "text-foreground/60",
             "relative"
           )}
         >
           Pro
-          <span className="absolute -top-3 -right-8 ml-2 rounded-md bg-[#adfa1d] px-1 py-0.5 text-xs leading-none text-[#000000] no-underline group-hover:no-underline">
+          <span className="absolute -right-8 -top-3 ml-2 rounded-md bg-[#adfa1d] px-1 py-0.5 text-xs leading-none text-[#000000] no-underline group-hover:no-underline">
             New
           </span>
         </Link>

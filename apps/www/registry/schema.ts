@@ -27,6 +27,7 @@ export const registryEntrySchema = z.object({
     "components:example",
     "components:block",
     "components:chart",
+    "components:pro",
   ]),
   category: z.string().optional(),
   subcategory: z.string().optional(),

@@ -14,10 +14,10 @@ import { Callout } from "@/components/callout"
 import { CodeBlockWrapper } from "@/components/code-block-wrapper"
 import { ComponentExample } from "@/components/component-example"
 import { ComponentPreview } from "@/components/component-preview"
-import { ProComponentPreview } from "@/components/pro-component-preview"
 import { ComponentSource } from "@/components/component-source"
 import { CopyButton, CopyNpmCommandButton } from "@/components/copy-button"
 import { FrameworkDocs } from "@/components/framework-docs"
+import { ProComponentPreview } from "@/components/pro-component-preview"
 import { StyleWrapper } from "@/components/style-wrapper"
 import {
   Accordion,

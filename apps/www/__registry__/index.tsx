@@ -3316,6 +3316,17 @@ export const Index: Record<string, any> = {
       subcategory: "Tooltip",
       chunks: []
     },
+    "pro-accordion-demo": {
+      name: "pro-accordion-demo",
+      type: "components:pro",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/default/pro/pro-accordion-demo")),
+      source: "",
+      files: ["registry/default/pro/pro-accordion-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
   },  "new-york": {
     "accordion": {
       name: "accordion",
@@ -6626,6 +6637,17 @@ export const Index: Record<string, any> = {
       files: ["registry/new-york/block/chart-tooltip-advanced.tsx"],
       category: "Charts",
       subcategory: "Tooltip",
+      chunks: []
+    },
+    "pro-accordion-demo": {
+      name: "pro-accordion-demo",
+      type: "components:pro",
+      registryDependencies: ["accordion"],
+      component: React.lazy(() => import("@/registry/new-york/pro/pro-accordion-demo")),
+      source: "",
+      files: ["registry/new-york/pro/pro-accordion-demo.tsx"],
+      category: "undefined",
+      subcategory: "undefined",
       chunks: []
     },
   },

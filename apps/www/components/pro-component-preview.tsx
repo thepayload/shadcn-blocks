@@ -6,6 +6,8 @@ import { Index } from "@/__registry__"
 import { cn } from "@/lib/utils"
 import { useConfig } from "@/hooks/use-config"
 import { CopyButton } from "@/components/copy-button"
+import { LockedButton } from "@/components/locked-button"
+
 import { Icons } from "@/components/icons"
 import { StyleSwitcher } from "@/components/style-switcher"
 import { ThemeWrapper } from "@/components/theme-wrapper"
@@ -116,6 +118,11 @@ export function ProComponentPreview({
                 variant="outline"
                 className="h-7 w-7 text-foreground opacity-100 hover:bg-muted hover:text-foreground [&_svg]:h-3.5 [&_svg]:w-3.5"
               />
+              <LockedButton
+                value={codeString}
+                variant="outline"
+                className="h-7 w-7 text-foreground opacity-100 hover:bg-muted hover:text-foreground [&_svg]:h-3.5 [&_svg]:w-3.5"
+              />
             </div>
           </div>
           <ThemeWrapper defaultTheme="zinc">
@@ -141,12 +148,22 @@ export function ProComponentPreview({
               </React.Suspense>
             </div>
           </ThemeWrapper>
+          <div className="w-full px-4 py-2 text-right text-sm">
+            <span className="ml-2 rounded-md bg-[#adfa1d] px-1.5 py-0.5 text-xs leading-none text-[#000000] no-underline group-hover:no-underline">
+              Pro version
+            </span>
+          </div>
         </TabsContent>
         <TabsContent value="code">
           <div className="flex flex-col space-y-4">
             <div className="w-full rounded-md [&_pre]:my-0 [&_pre]:max-h-[350px] [&_pre]:overflow-auto">
               {Code}
             </div>
+          </div>
+          <div className="w-full px-4 py-2 text-right text-sm">
+            <span className="ml-2 rounded-md bg-[#adfa1d] px-1.5 py-0.5 text-xs leading-none text-[#000000] no-underline group-hover:no-underline">
+              Pro version
+            </span>
           </div>
         </TabsContent>
       </Tabs>
