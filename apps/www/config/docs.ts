@@ -345,7 +345,7 @@ export const docsConfig: DocsConfig = {
     },
     {
       title: "Pro",
-      label: 'New',
+      label: "New",
       items: [
         {
           title: "Auths",
@@ -377,8 +377,8 @@ export const docsConfig: DocsConfig = {
           href: "/docs/pro/widgets",
           items: [],
         },
-      ]
-    }
+      ],
+    },
   ],
   chartsNav: [
     {
