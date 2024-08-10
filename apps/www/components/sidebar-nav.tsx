@@ -24,6 +24,11 @@ export function DocsSidebarNav({ config }: DocsSidebarNavProps) {
         <div key={index} className={cn("pb-4")}>
           <h4 className="mb-1 rounded-md px-2 py-1 text-sm font-semibold">
             {item.title}
+            {item.label && (
+              <span className="ml-2 rounded-md bg-[#adfa1d] px-1.5 py-0.5 text-xs leading-none text-[#000000] no-underline group-hover:no-underline">
+                {item.label}
+              </span>
+            )}
           </h4>
           {item?.items?.length && (
             <DocsSidebarNavItems items={item.items} pathname={pathname} />
